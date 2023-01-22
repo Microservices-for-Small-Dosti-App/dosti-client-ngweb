@@ -70,7 +70,7 @@
             },
             "development": {
               "browserTarget": "dosti-client-ngweb:build:development",
-              "port": 4201
+              "port": 4007
             }
           },
           "defaultConfiguration": "development"
