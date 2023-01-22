@@ -21,7 +21,7 @@ import { FooterComponent } from "./modules/shared/layout/footer/footer.component
         AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
-        SharedModule,
+        // SharedModule,
         NgOptimizedImage,
         HeaderComponent,
         FooterComponent
