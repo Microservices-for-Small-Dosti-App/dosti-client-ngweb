@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "a1-start": {
+    "dosti-client-ngweb": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/a1-start",
+            "outputPath": "dist/dosti-client-ngweb",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "a1-start:build:production"
+              "browserTarget": "dosti-client-ngweb:build:production"
             },
             "development": {
-              "browserTarget": "a1-start:build:development",
+              "browserTarget": "dosti-client-ngweb:build:development",
               "port": 4201
             }
           },
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "a1-start:build"
+            "browserTarget": "dosti-client-ngweb:build"
           }
         },
         "test": {
