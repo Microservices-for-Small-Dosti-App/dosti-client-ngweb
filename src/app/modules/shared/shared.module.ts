@@ -7,16 +7,16 @@ import { HeaderComponent } from './layout/header/header.component';
 import { NgmaterialModule } from '~/app/ngmaterial/ngmaterial.module';
 
 const components = [
-  HeaderComponent,
-  FooterComponent,
+  // HeaderComponent,
+  // FooterComponent,
 ];
 
 @NgModule({
   declarations: [
-    ...components,
+    // ...components,
   ],
   exports: [
-    ...components
+    // ...components
   ],
   imports: [
     CommonModule,
