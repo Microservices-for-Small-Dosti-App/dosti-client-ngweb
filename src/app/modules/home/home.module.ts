@@ -1,19 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+// import { NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
 
-import { HomeComponent } from './home.component';
-import { HomeRoutingModule } from './home-routing.module';
+// import { HomeComponent } from './home.component';
+// import { HomeRoutingModule } from './home-routing.module';
 
-const components = [
-  HomeComponent
-];
+// const components = [
+//   HomeComponent
+// ];
 
-@NgModule({
-  declarations: components,
-  exports: components,
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
-})
-export class HomeModule { }
+// @NgModule({
+//   declarations: components,
+//   exports: components,
+//   imports: [
+//     CommonModule,
+//     HomeRoutingModule
+//   ]
+// })
+// export class HomeModule { }
