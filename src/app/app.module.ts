@@ -16,7 +16,7 @@ import { NgOptimizedImage } from '@angular/common';
     bootstrap: [],
     imports: [
         BrowserModule,
-        AppRoutingModule,
+        // AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
         NgOptimizedImage,
