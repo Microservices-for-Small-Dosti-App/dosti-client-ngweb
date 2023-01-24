@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './modules/shared/layout/footer/footer.component';
 import { HeaderComponent } from './modules/shared/layout/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   standalone: true,
@@ -16,7 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterOutlet,
     AsyncPipe,
     NgOptimizedImage,
-    // BrowserAnimationsModule
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
