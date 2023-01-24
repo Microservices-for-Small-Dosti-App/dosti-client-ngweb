@@ -6,23 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgOptimizedImage } from '@angular/common';
-import { HeaderComponent } from "./modules/shared/layout/header/header.component";
-import { FooterComponent } from "./modules/shared/layout/footer/footer.component";
+// import { HeaderComponent } from "./modules/shared/layout/header/header.component";
+// import { FooterComponent } from "./modules/shared/layout/footer/footer.component";
 
 @NgModule({
     declarations: [
-        AppComponent
     ],
     providers: [],
-    bootstrap: [AppComponent],
+    bootstrap: [],
     imports: [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
         NgOptimizedImage,
-        HeaderComponent,
-        FooterComponent
+        // HeaderComponent,
+        // FooterComponent
     ]
 })
 export class AppModule { }
