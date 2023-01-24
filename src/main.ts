@@ -1,7 +1,23 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { PreloadAllModules, provideRouter, withDebugTracing, withPreloading, } from '@angular/router';
 
-import { AppModule } from './app/app.module';
+import { AppComponent } from './app/app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { APP_ROUTES } from './app/app-routes';
 
+const moduleoid = {
+  providers: [
+    importProvidersFrom(HttpClientModule),
+    provideRouter(
+      APP_ROUTES,
+      withPreloading(PreloadAllModules),
+      withDebugTracing()
+    ),
+  ],
+};
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+const environment = { production: false };
+if (environment.production) enableProdMode();
+
+bootstrapApplication(AppComponent, moduleoid).catch(console.error);

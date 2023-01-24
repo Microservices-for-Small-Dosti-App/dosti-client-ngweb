@@ -8,7 +8,7 @@ import { NgmaterialModule } from '~/app/ngmaterial/ngmaterial.module';
   imports: [
     NgmaterialModule,
     CommonModule,
-    RouterLinkWithHref,
+    RouterLinkWithHref
   ],
   selector: 'app-header',
   templateUrl: './header.component.html',
