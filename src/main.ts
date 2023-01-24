@@ -21,9 +21,3 @@ const environment = { production: false };
 if (environment.production) enableProdMode();
 
 bootstrapApplication(AppComponent, moduleoid).catch(console.error);
-
-// import { AppModule } from './app/app.module';
-
-
-// platformBrowserDynamic().bootstrapModule(AppModule)
-//   .catch(err => console.error(err));
