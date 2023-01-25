@@ -1,12 +1,14 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterLinkWithHref } from '@angular/router';
-import { NgmaterialModule } from '~/app/ngmaterial/ngmaterial.module';
 
 @Component({
   standalone: true,
   imports: [
-    NgmaterialModule,
+    MatIconModule,
+    MatButtonModule,
     NgOptimizedImage,
     CommonModule,
     RouterLinkWithHref,
