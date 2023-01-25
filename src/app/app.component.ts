@@ -1,7 +1,8 @@
 import { AsyncPipe, CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './modules/shared/layout/footer/footer.component';
 import { HeaderComponent } from './modules/shared/layout/header/header.component';
@@ -16,7 +17,6 @@ import { HeaderComponent } from './modules/shared/layout/header/header.component
     RouterOutlet,
     AsyncPipe,
     NgOptimizedImage,
-    // NoopAnimationsModule
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
