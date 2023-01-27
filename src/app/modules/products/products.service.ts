@@ -25,7 +25,7 @@ export class ProductsService {
 
     this.httpClient.get<IProduct[]>('https://dummyjson.com/products?limit=10')
       .pipe(
-        delay(5000)
+        delay(1000)
       )
       .subscribe({
         next: (payload: any) => {

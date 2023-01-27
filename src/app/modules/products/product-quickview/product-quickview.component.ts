@@ -1,7 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { IProductQuickView } from './iproduct-quickview';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
+import { IProductQuickView } from './iproduct-quickview';
 
 @Component({
   selector: 'app-product-quickview',
@@ -9,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     CommonModule,
     MatCardModule,
+    MatButtonModule,
     NgOptimizedImage,
   ],
   templateUrl: './product-quickview.component.html',

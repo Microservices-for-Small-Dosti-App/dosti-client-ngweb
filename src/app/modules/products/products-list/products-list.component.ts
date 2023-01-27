@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { take } from 'rxjs';
+import { MatPaginatorModule } from '@angular/material/paginator'
 
 import { ProductsService } from '../products.service';
-import { MatPaginatorModule } from '@angular/material/paginator'
 import { ProductQuickviewComponent } from '../product-quickview/product-quickview.component';
-import { HttpClientModule } from '@angular/common/http';
+import { IProduct } from '../iproduct';
 
 @Component({
   selector: 'app-products-list',
@@ -24,7 +26,18 @@ export class ProductsListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.productsService.getProducts();
+
+    this.productsService.products$
+      .subscribe({
+        next: (products: IProduct[]) => {
+          if (products.length === 0) {
+            this.productsService.getProducts();
+          }
+        },
+        error: err => {
+          console.warn(err);
+        }
+      });
   }
 
 }
