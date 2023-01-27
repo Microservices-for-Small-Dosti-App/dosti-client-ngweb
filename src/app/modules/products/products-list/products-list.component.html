@@ -1,3 +1,5 @@
+<h1>Products List</h1>
+<p>{{productsService.productQuickViews$ | async | json}}</p>
 <div class="all-products" *ngIf="productsService.productQuickViews$ | async; let allProducts;">
     <div class="container" *ngIf="allProducts && allProducts.length > 0">
         <ng-container *ngFor="let product of allProducts">
