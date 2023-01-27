@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, map, delay } from 'rxjs';
 import { IProduct } from './iproduct';
-import { getQuickViewsFromProducts } from './product-quickview/iproduct-quickview';
+import { getQuickViewsFromProducts } from './products.utilities';
 
 @Injectable({
   providedIn: 'root'

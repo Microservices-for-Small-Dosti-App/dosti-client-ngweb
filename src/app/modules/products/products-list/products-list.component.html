@@ -4,7 +4,7 @@
             <app-product-quickview [product]="product"></app-product-quickview>
         </ng-container>
 
-        <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[10]" [showFirstLastButtons]="true"
+        <mat-paginator [length]="allProducts.length" [pageSize]="10" [pageSizeOptions]="[10]" [showFirstLastButtons]="true"
             aria-label="Select page">
         </mat-paginator>
     </div>
