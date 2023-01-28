@@ -11,6 +11,10 @@ export const APP_ROUTES: Routes = [
       () => import('./modules/home/home.component').then((c) => c.HomeComponent)
   },
   {
+    path: 'products', loadComponent:
+      () => import('./modules/products/products-list/products-list.component').then((c) => c.ProductsListComponent)
+  },
+  {
     path: 'errors/not-found', loadComponent:
       () => import('./core/errors/not-found/not-found.component').then(c => c.NotFoundComponent)
   },
