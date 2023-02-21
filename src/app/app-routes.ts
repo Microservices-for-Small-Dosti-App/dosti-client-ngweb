@@ -12,7 +12,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'products', loadComponent:
-      () => import('./modules/products/products-list/products-list.component').then((c) => c.ProductsListComponent)
+      () => import('./products/products-list/products-list.component').then((c) => c.ProductsListComponent)
   },
   {
     path: 'errors/not-found', loadComponent:
