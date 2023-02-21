@@ -4,11 +4,11 @@ export const APP_ROUTES: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: 'dashboard', loadComponent:
-      () => import('./modules/dashboard/dashboard.component').then((c) => c.DashboardComponent)
+      () => import('./dashboard/dashboard.component').then((c) => c.DashboardComponent)
   },
   {
     path: 'home', loadComponent:
-      () => import('./modules/home/home.component').then((c) => c.HomeComponent)
+      () => import('./home/home.component').then((c) => c.HomeComponent)
   },
   {
     path: 'products', loadComponent:
