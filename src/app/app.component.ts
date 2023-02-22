@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
-import { FooterComponent } from './modules/shared/layout/footer/footer.component';
-import { HeaderComponent } from './modules/shared/layout/header/header.component';
+import { FooterComponent } from '~core/layout/footer/footer.component';
+import { HeaderComponent } from '~core/layout/header/header.component';
 
 @Component({
   standalone: true,
